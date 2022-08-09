@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220809 15:28:18.978" rpa="false" schemaversion="3">
+<suite id="s1" name="Orange" source="d:\Belajar\Robotframeworktraining\orange.robot">
+<test id="s1-t1" name="Login Orange" line="13">
+<kw name="Open page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220809 15:28:19.195" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20220809 15:28:19.195" endtime="20220809 15:28:24.301"/>
+</kw>
+<status status="PASS" starttime="20220809 15:28:19.195" endtime="20220809 15:28:24.301"/>
+</kw>
+<kw name="Login">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=txtUsername</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220809 15:28:24.301" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20220809 15:28:24.301" endtime="20220809 15:28:24.386"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=txtPassword</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220809 15:28:24.386" level="INFO">Typing text 'admin123' into text field 'id=txtPassword'.</msg>
+<status status="PASS" starttime="20220809 15:28:24.386" endtime="20220809 15:28:24.460"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=btnLogin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220809 15:28:24.460" level="INFO">Clicking element 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20220809 15:28:24.460" endtime="20220809 15:28:29.545"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220809 15:28:29.545" endtime="20220809 15:28:31.651"/>
+</kw>
+<status status="PASS" starttime="20220809 15:28:24.301" endtime="20220809 15:28:31.652"/>
+</kw>
+<status status="PASS" starttime="20220809 15:28:19.195" endtime="20220809 15:28:31.654"/>
+</test>
+<status status="PASS" starttime="20220809 15:28:18.978" endtime="20220809 15:28:31.656"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Orange">Orange</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
